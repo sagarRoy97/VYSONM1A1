@@ -27,7 +27,16 @@ INSERT INTO url_shortener (original_url) VALUES
 ('https://www.github.com');
 ```
 
-With this database, we created a server with Express.js. There, we inserted 1,000 rows, then 1 million rows, and then 10 million rows. At last, we tried to put a query in a 1 million times loop in this table.
+With this database, we created a server with Express.js. There, we inserted 1,000 rows, then 1 million rows, and then 10 million rows. At last, we tried to put a query in a 1 million times loop in this table. To setup this
+first take a clone of this repo then inside root directory of this repo run the following command to install npm packages and dependencies
+```bash
+npm install
+```
+After that we can start the server by the next command wriiten below
+```bash
+node app.js
+```
+Now we can test the server in the browser and test the routes.
 
 
 # The Actual Assignment Link: 
