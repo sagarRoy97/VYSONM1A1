@@ -26,6 +26,10 @@ INSERT INTO url_shortener (original_url) VALUES
 ('https://swapnil.net/library'),
 ('https://www.github.com');
 ```
+The following SQL query calculates the size of the table
+```sql
+SELECT pg_size_pretty(pg_relation_size('url_shortener')) AS table_size;
+```
 
 With this database, we created a server with Express.js. There, we inserted 1,000 rows, then 1 million rows, and then 10 million rows. At last, we tried to put a query in a 1 million times loop in this table. To setup this
 first take a clone of this repo then inside root directory of this repo run the following command to install npm packages and dependencies
